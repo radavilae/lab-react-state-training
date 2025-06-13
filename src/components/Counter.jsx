@@ -7,7 +7,7 @@ function Counter() {
     <>
       <button onClick={() => setCount(count + 1)}>+</button>
       {count}
-      <button onClick={() => setCount(count - 1)}>-</button>
+      <button onClick={() => setCount(count > 0 ? count - 1 : 0)}>-</button>
     </>
   );
 }
